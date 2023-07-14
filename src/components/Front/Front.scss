@@ -1,0 +1,24 @@
+.front {
+    background-image: url("../../images/bg-card-front.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 366px;
+    height: 184px;
+    padding: 30px;
+    margin-left: 70%;
+    color: hsl(270, 3%, 87%);
+
+    .details {
+        margin-top: 3rem;
+        
+        .digits {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+    }
+    .name-exp {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9rem;
+    }
+}

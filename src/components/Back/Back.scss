@@ -1,0 +1,18 @@
+.back {
+    background-image: url("../../images/bg-card-back.png");
+    
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: hsl(270, 3%, 87%);
+    width: 366px;
+    height: 184px;
+    padding: 20px;
+    margin-left: 105%;
+
+    p {
+        margin-right: 30px;
+    }
+}
