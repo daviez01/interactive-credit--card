@@ -18,10 +18,14 @@ function App() {
   }
 
   const handleNumber = (e) => {
-    const trimmedDigits = e.target.value.replace(/\s/g, ''); // Remove existing spaces, if any
-    const groups = trimmedDigits.match(/.{1,4}/g); // Split the digits into groups of four
-    const number = groups.join(' '); // Join the groups with a space in between, or return an empty string if there are no groups
-    setNumber(number);
+    if (e.target.value.length > 0) {
+      const trimmedDigits = e.target.value.replace(/\s/g, ''); // Remove existing spaces, if any
+      const groups = trimmedDigits.match(/.{1,4}/g); // Split the digits into groups of four
+      const number = groups.join(' '); // Join the groups with a space in between, or return an empty string if there are no groups
+      setNumber(number);
+    } else {
+      setNumber('0000 0000 0000 0000');
+    }
   }
 
   const handleMonth = (e) => {
