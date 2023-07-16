@@ -16,3 +16,16 @@
         margin-right: 30px;
     }
 }
+
+@media (max-width: 768px) {
+    .back {
+        width: 245px;
+        height: 124px;
+        margin: 2rem 2rem 2.8rem 0;
+        padding: 10px;
+
+        p {
+            margin-right: 25px;
+        }
+    }
+}

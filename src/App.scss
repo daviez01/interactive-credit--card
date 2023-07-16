@@ -23,3 +23,23 @@
     }
 }
 
+@media (max-width: 768px) {
+    .app {
+        flex-direction: column;
+        height: auto;
+        font-size: 13px;
+        width: 100%;
+
+        .left {
+            background-image: url("./images/bg-main-mobile.png");
+            position: relative;
+            flex-direction: column-reverse;
+            align-items: flex-end;
+            width: 100%;
+            gap: 0;
+        }
+        .right {
+            width: 100%;
+        }
+    }
+}
